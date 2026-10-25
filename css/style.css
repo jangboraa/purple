@@ -176,6 +176,68 @@ h2::before {
 
 .project .links a:hover { text-decoration: underline; }
 
+.sub-heading { font-size: 18px; margin: 48px 0 16px; }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.project.compact { padding: 22px; display: flex; flex-direction: column; }
+
+.project.compact h3 { font-size: 17px; margin: 4px 0 8px; }
+
+.project.compact .summary { font-size: 15px; flex: 1; }
+
+.project.compact .tags { margin-bottom: 0; }
+
+/* 핵심 역량 */
+.strengths {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.strengths li::before { content: "✓ "; color: var(--accent); }
+
+/* 경력 */
+.timeline { list-style: none; border-left: 2px solid var(--border); margin-left: 6px; }
+
+.job { position: relative; padding: 0 0 32px 28px; }
+
+.job:last-child { padding-bottom: 0; }
+
+.job::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 3px solid var(--accent);
+}
+
+.job-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 4px 12px;
+    margin-bottom: 6px;
+}
+
+.job h3 { font-size: 19px; }
+
+.job h3 span { font-size: 15px; font-weight: 500; color: var(--muted); margin-left: 6px; }
+
+.job p { color: var(--muted); }
+
 /* 연락처 */
 .contact-list {
     list-style: none;

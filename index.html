@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>장보라 | 백엔드 개발자</title>
-    <meta name="description" content="백엔드 개발자 장보라의 포트폴리오">
+    <meta name="description" content="주문·결제·정산 도메인의 백엔드 개발자 장보라의 포트폴리오">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
@@ -16,6 +16,7 @@
             <nav>
                 <a href="#about">소개</a>
                 <a href="#stack">기술</a>
+                <a href="#career">경력</a>
                 <a href="#projects">프로젝트</a>
                 <a href="#contact">연락처</a>
             </nav>
@@ -27,11 +28,17 @@
         <section id="about">
             <div class="container">
                 <p class="eyebrow">Backend Developer</p>
-                <h1>안정적인 서비스를 만드는<br><strong>백엔드 개발자 장보라</strong>입니다.</h1>
+                <h1>운영 환경까지 생각하는<br><strong>백엔드 개발자 장보라</strong>입니다.</h1>
                 <p class="intro">
-                    대규모 트래픽에서도 흔들리지 않는 API와 데이터 구조를 고민합니다.
-                    문제의 원인을 끝까지 파고들고, 그 과정을 기록하고 공유하는 것을 좋아합니다.
+                    2019년부터 웹 서비스를 개발해 왔고, 지금은 주문·결제·정산 도메인의 핀테크 플랫폼을 만들고 있습니다.
+                    기능 구현에서 끝내지 않고 장애 가능성, 외부 API 실패, 트래픽 증가까지 고려해
+                    오래 유지할 수 있는 서비스 구조를 고민합니다.
                 </p>
+                <ul class="strengths">
+                    <li>문제 해결 중심의 개발</li>
+                    <li>원활한 협업과 커뮤니케이션</li>
+                    <li>서비스 개선을 위한 주도적인 사고</li>
+                </ul>
                 <div class="cta">
                     <a href="#projects" class="btn primary">프로젝트 보기</a>
                     <a href="#contact" class="btn ghost">연락하기</a>
@@ -49,33 +56,72 @@
                         <ul class="tags">
                             <li>Java</li>
                             <li>Kotlin</li>
-                            <li>SQL</li>
+                            <li>C#</li>
+                            <li>PHP</li>
                         </ul>
                     </div>
                     <div class="stack-group">
-                        <h3>Framework</h3>
+                        <h3>Backend</h3>
                         <ul class="tags">
                             <li>Spring Boot</li>
-                            <li>Spring Data JPA</li>
-                            <li>QueryDSL</li>
+                            <li>Spring WebFlux</li>
+                            <li>Spring Security</li>
+                            <li>JOOQ</li>
+                            <li>MyBatis</li>
+                            <li>Laravel</li>
+                            <li>.NET Core</li>
                         </ul>
                     </div>
                     <div class="stack-group">
                         <h3>Database</h3>
                         <ul class="tags">
-                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
                             <li>Redis</li>
+                            <li>MySQL</li>
+                            <li>Oracle</li>
                         </ul>
                     </div>
                     <div class="stack-group">
                         <h3>Infra / DevOps</h3>
                         <ul class="tags">
                             <li>AWS</li>
+                            <li>Kubernetes (EKS)</li>
                             <li>Docker</li>
+                            <li>Jenkins</li>
                             <li>GitHub Actions</li>
                         </ul>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- 경력 -->
+        <section id="career">
+            <div class="container">
+                <h2>경력</h2>
+                <ol class="timeline">
+                    <li class="job">
+                        <div class="job-head">
+                            <h3>비유바움 <span>개발팀 · 프로</span></h3>
+                            <span class="period">2023.08 – 재직 중</span>
+                        </div>
+                        <p>PG 정산·대사 관리 솔루션 기반의 핀테크 플랫폼 기업에서 가맹점주 대상 주문·결제 서비스와 소상공인 금융 플랫폼을 개발하고 운영하고 있습니다.</p>
+                    </li>
+                    <li class="job">
+                        <div class="job-head">
+                            <h3>(주)테드 <span>개발팀 · 대리</span></h3>
+                            <span class="period">2019.09 – 2023.07</span>
+                        </div>
+                        <p>웹·모바일 서비스 구축 및 운영 기업에서 쇼핑몰, 쇼핑몰 연동 허브, 중고차 검사, 수출입·통관 등 다양한 산업군의 웹 서비스를 개발했습니다.</p>
+                    </li>
+                    <li class="job">
+                        <div class="job-head">
+                            <h3>한국방송통신대학교 <span>컴퓨터과학과 졸업</span></h3>
+                            <span class="period">2020.02 – 2025.02</span>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </section>
 
@@ -86,44 +132,102 @@
                 <div class="projects">
                     <article class="project">
                         <div class="project-head">
-                            <h3>프로젝트 이름 1</h3>
-                            <span class="period">2025.03 – 2025.08 · 팀 4명</span>
+                            <h3>소상공인 통합 금융 플랫폼</h3>
+                            <span class="period">2025.12 – 진행 중 · 비유바움</span>
                         </div>
-                        <p class="summary">프로젝트를 한두 문장으로 소개해 주세요. 어떤 문제를 해결하는 서비스인지 적으면 좋아요.</p>
+                        <p class="summary">가맹점주·영업자·직원을 대상으로 결제, 정산, 수수료, 급여, 가입대행 서비스를 통합 제공하는 엔터프라이즈 금융 플랫폼입니다.</p>
                         <ul class="points">
-                            <li>담당한 역할과 구현한 기능</li>
-                            <li>해결한 기술적 문제와 그 결과 (예: 응답 시간 40% 단축)</li>
-                            <li>도입한 기술과 그 이유</li>
+                            <li>JOOQ 기반 Type-safe SQL 환경 구축, PostgreSQL Primary-Replica 구조로 읽기 부하 분리</li>
+                            <li>Redisson 분산락 기반 동시성 제어, AOP로 권한 검증·서비스 상태 체크·MDC 로깅 공통화</li>
+                            <li>Google·Naver·Apple·Kakao OAuth2 소셜 로그인과 JWT 인증 시스템 구축</li>
+                            <li>PG, 선정산, 전자세금계산서, SMS, 푸시, 공공데이터 등 외부 시스템 18종 연동</li>
+                            <li>Quartz 배치로 정기결제, 계약 만료 처리, 정산 자동화</li>
+                            <li>AWS EKS Rolling Update와 PodDisruptionBudget으로 무중단 배포, GitHub Actions CI/CD 구축</li>
                         </ul>
                         <ul class="tags">
+                            <li>Java</li>
+                            <li>Kotlin</li>
                             <li>Spring Boot</li>
-                            <li>JPA</li>
-                            <li>MySQL</li>
+                            <li>JOOQ</li>
+                            <li>PostgreSQL</li>
+                            <li>Redis</li>
+                            <li>AWS EKS</li>
                         </ul>
-                        <div class="links">
-                            <a href="#">GitHub</a>
-                            <a href="#">회고 글</a>
-                        </div>
                     </article>
 
                     <article class="project">
                         <div class="project-head">
-                            <h3>프로젝트 이름 2</h3>
-                            <span class="period">2024.09 – 2024.12 · 개인</span>
+                            <h3>가맹점주 통합 주문·결제 서비스</h3>
+                            <span class="period">2023.08 – 현재 · 비유바움</span>
                         </div>
-                        <p class="summary">프로젝트를 한두 문장으로 소개해 주세요.</p>
+                        <p class="summary">QR/NFC Tag Order, KIOSK, POS, Table Order 등 다양한 주문 채널을 하나로 통합한 주문·결제 플랫폼입니다. 웨이팅·예약과 관리자용 매출·주문 관리 시스템을 함께 운영합니다.</p>
                         <ul class="points">
-                            <li>담당한 역할과 구현한 기능</li>
-                            <li>해결한 기술적 문제와 그 결과</li>
+                            <li>WebFlux 기반 비동기 주문·결제 REST API 설계 및 개발</li>
+                            <li>WebSocket 기반 실시간 주문 상태 푸시와 웨이팅 큐 시스템 구현</li>
+                            <li>PG 결제 API 연동: 승인, 취소, 결제 결과 처리</li>
+                            <li>Redis Stream 기반 자동 취소, 알림 재전송, 과금 복구 로직 구현</li>
+                            <li>Firebase(앱 푸시), PopBill(알림톡), Aligo(SMS) 다중 채널 알림 통합</li>
+                            <li>ALB + Auto Scaling 구성과 CloudWatch 모니터링으로 트래픽 대응 및 운영 안정화</li>
                         </ul>
                         <ul class="tags">
-                            <li>Kotlin</li>
+                            <li>Java</li>
+                            <li>Spring WebFlux</li>
+                            <li>MongoDB</li>
                             <li>Redis</li>
-                            <li>Docker</li>
+                            <li>AWS</li>
+                            <li>Jenkins</li>
                         </ul>
-                        <div class="links">
-                            <a href="#">GitHub</a>
-                        </div>
+                    </article>
+                </div>
+
+                <h3 class="sub-heading">이전 프로젝트 · (주)테드</h3>
+                <div class="project-grid">
+                    <article class="project compact">
+                        <span class="period">2023.04 – 2023.07</span>
+                        <h3>수출입 통관관리 웹 서비스</h3>
+                        <p class="summary">한국어·영어·베트남어를 지원하는 통관 위험 관리 서비스. ECUS 엑셀 업로드 검증, PDF 리포트 생성, 메일 발송 기능 개발.</p>
+                        <ul class="tags">
+                            <li>전자정부프레임워크</li>
+                            <li>MariaDB</li>
+                        </ul>
+                    </article>
+                    <article class="project compact">
+                        <span class="period">2023.01 – 2023.04</span>
+                        <h3>수출입 조회 웹 서비스</h3>
+                        <p class="summary">고객사의 수출입·통관 정보를 시각화해 조회하는 서비스. REST API 설계와 공공데이터 기반 엑셀 다운로드 구현.</p>
+                        <ul class="tags">
+                            <li>ASP.NET</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </article>
+                    <article class="project compact">
+                        <span class="period">2022.07 – 2023.01</span>
+                        <h3>중고차 전문 검사 서비스</h3>
+                        <p class="summary">보험·사고 이력 조회와 차량 검사를 제공하는 웹·앱 플랫폼. 보험개발원 API, 소셜 로그인, 토스 결제 연동.</p>
+                        <ul class="tags">
+                            <li>.NET Core</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </article>
+                    <article class="project compact">
+                        <span class="period">2022.02 – 2022.08</span>
+                        <h3>쇼핑몰 연동 허브 서비스</h3>
+                        <p class="summary">판매자가 여러 쇼핑몰의 상품·주문을 한곳에서 관리하는 서비스. 하프클럽, 롯데아이몰, 스마트스토어 등 API 연동.</p>
+                        <ul class="tags">
+                            <li>Laravel</li>
+                            <li>Vue.js</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </article>
+                    <article class="project compact">
+                        <span class="period">2021.09 – 2022.02</span>
+                        <h3>쇼핑몰 웹 서비스</h3>
+                        <p class="summary">사용자 상품 구매와 관리자 주문·매출 관리를 제공하는 쇼핑몰. 비즈니스 로직과 사용자·관리자 화면 개발.</p>
+                        <ul class="tags">
+                            <li>Spring MVC</li>
+                            <li>MyBatis</li>
+                            <li>Oracle</li>
+                        </ul>
                     </article>
                 </div>
             </div>
@@ -135,21 +239,15 @@
                 <h2>연락처</h2>
                 <ul class="contact-list">
                     <li>
-                        <a href="mailto:your-email@example.com">
+                        <a href="mailto:wkdqhfk92@naver.com">
                             <span class="label">Email</span>
-                            <span class="value">your-email@example.com</span>
+                            <span class="value">wkdqhfk92@naver.com</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/purple" target="_blank" rel="noopener">
+                        <a href="https://github.com/jangboraa" target="_blank" rel="noopener">
                             <span class="label">GitHub</span>
-                            <span class="value">github.com/purple</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank" rel="noopener">
-                            <span class="label">Blog</span>
-                            <span class="value">블로그 주소</span>
+                            <span class="value">github.com/jangboraa</span>
                         </a>
                     </li>
                 </ul>
